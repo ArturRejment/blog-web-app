@@ -1,0 +1,85 @@
+body {
+  font-family: 'Fira Code', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 700;
+}
+
+a, a:hover, a:visited {
+  color: #66fcf1;
+  text-decoration: none;
+}
+
+.navbar {
+  background-color: #0b0c10;
+}
+
+.navbar-brand, .navbar-brand:visited, .navbar-brand:hover {
+  font-weight: 700;
+  color: #66fcf1;
+  font-size: 1.5rem;
+}
+
+.nav-link:visited, .nav-link:hover {
+  color: #66fcf1;
+}
+
+.btn-main {
+  background-color: #66fcf1 !important;
+  color: #0b0c10;
+}
+
+input {
+  background-color: #1f2833 !important;
+  color: #66fcf1 !important;
+}
+
+.hero {
+  background-color: #1f2833;
+  height: 100vh;
+}
+
+.hero__post {
+  position: relative;
+  height: 70vh;
+  margin-top: 5vh;
+}
+
+.hero__post__small {
+  height: 15vw !important;
+}
+
+.hero__post img {
+  height: 100%;
+}
+
+.hero__post__badges {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.hero__post__badges a {
+  padding: 5px;
+  font-size: 1rem;
+  text-align: center;
+  display: block;
+  background-color: #0b0c10;
+  color: #66fcf1;
+  margin-bottom: 5px;
+}
+
+.hero__post__badges a i {
+  margin-right: 10px;
+}
+
+.hero__post__content {
+  position: absolute;
+  bottom: 20px;
+}
+/*# sourceMappingURL=index_style.css.map */

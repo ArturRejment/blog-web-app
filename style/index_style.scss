@@ -1,0 +1,96 @@
+$bg-color: #0b0c10;
+$sec-bg-color: #1f2833;
+$prim-color: #66fcf1;
+$sec-color: #45a292;
+$gray: #c5c6c7;
+
+body{
+	font-family: 'Fira Code', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5 {
+	font-weight: 700;
+}
+
+a, a:hover, a:visited {
+	color: $prim-color;
+	text-decoration: none;
+}
+
+
+// HEADER
+
+.navbar {
+	background-color: $bg-color;
+}
+
+.navbar-brand, .navbar-brand:visited, .navbar-brand:hover {
+	font-weight: 700;
+	color: $prim-color;
+	font-size: 1.5rem;
+}
+
+.nav-link:visited, .nav-link:hover {
+	color: $prim-color;
+}
+
+.btn-main {
+	background-color: $prim-color !important;
+	color: $bg-color;
+}
+
+input {
+	background-color: $sec-bg-color !important;
+	color: $prim-color !important;
+}
+
+// HERO
+
+.hero {
+	background-color: $sec-bg-color;
+	height: 100vh;
+
+	&__post {
+		position: relative;
+		height: 70vh;
+		margin-top: 5vh;
+
+		&__small {
+			height: 15vw !important;
+		}
+
+		img {
+			height: 100%;
+		}
+
+		&__badges {
+			position:absolute;
+			top:20px;
+			right: 20px;
+
+			a {
+				padding: 5px;
+				font-size: 1rem;
+				text-align: center;
+				display: block;
+				background-color: $bg-color;
+				color: $prim-color;
+				margin-bottom: 5px;
+
+				i {
+					margin-right: 10px;
+				}
+			}
+
+		}
+
+		&__content {
+			position: absolute;
+			bottom: 20px;
+		}
+
+	}
+}
