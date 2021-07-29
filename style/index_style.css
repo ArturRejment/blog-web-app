@@ -46,16 +46,12 @@ input {
 
 .hero__post {
   position: relative;
-  height: 70vh;
   margin-top: 5vh;
-}
-
-.hero__post__small {
-  height: 15vw !important;
 }
 
 .hero__post img {
   height: 100%;
+  width: 100%;
 }
 
 .hero__post__badges {
@@ -81,5 +77,40 @@ input {
 .hero__post__content {
   position: absolute;
   bottom: 20px;
+  left: 20px;
+}
+
+.hero__post__content img {
+  border: 2px solid #66fcf1;
+}
+
+.hero__post__content h3, .hero__post__content h2 {
+  color: #66fcf1;
+}
+
+@media (max-width: 992px) {
+  .hero {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .hero__post__small__content h3 {
+    font-size: 1.2rem;
+  }
+  .hero__post__small__content img {
+    height: 70px;
+    width: 75px;
+  }
+  .hero__post__small__content {
+    bottom: 5px;
+    right: 5px;
+  }
+  .hero__post__small__content h3 {
+    -webkit-transform: translateY(40%);
+            transform: translateY(40%);
+  }
 }
 /*# sourceMappingURL=index_style.css.map */
