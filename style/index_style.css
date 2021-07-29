@@ -88,6 +88,10 @@ input {
   color: #66fcf1;
 }
 
+.blog-post {
+  margin-top: 40px;
+}
+
 @media (max-width: 992px) {
   .hero {
     height: -webkit-fit-content;
