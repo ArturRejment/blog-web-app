@@ -15,9 +15,9 @@ function getCookie(name) {
 		}
 const csrftoken = getCookie('csrftoken');
 
-fetchData()
+fetchBlogPosts()
 
-function fetchData() {
+function fetchBlogPosts() {
 	var url = 'http://127.0.0.1:7000/post'
 
 	fetch(url).then((resp) => resp.json()).then(function (data) {
@@ -32,34 +32,39 @@ function fetchData() {
 			var profileImage = list[i]["author"]["imageURL"]
 			var tags = list[i]["tagList"]
 			var personalData = list[i]['author']['first_name'] + " " + list[i]["author"]["last_name"]
+			let description = list[i]['description']
 
 
 			let tagList = ""
-			for (var tag in tags) {
-				tagList += `<a class="px-2" href="#">${tags[tag]}</a>`
+			if (tags.length == 1) {
+				tagList += `<a class="px-2" href="#">${tags[0]}</a>`
+			}
+			else {
+				tagList += `<a class="px-2" href="#">${tags[0]}</a>`
+				tagList += `<a class="px-2" href="#">${tags[1]}</a>`
 			}
 
 			var post = `
-					<div class="col-md-9 mb-5">
-						<article class="blog-post shadow">
-							<div class="row ">
-								<div class="col-sm-4">
-									<img alt="" class="img-fluid" style="height: 100%" src="${heroImage}">
-								</div>
-								<div class="col-sm-8">
-									<div class="row pt-2">
-										<img alt="" class="img-fluid rounded-circle col-md-2 " src="${profileImage}">
-										<p class="col-sm-6 mt-4"> by ${personalData}</p>
-										<div class="col-sm-3">
-											${tagList}
-										</div>
-									</div>
-									<h2>${title}</h2>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-								</div>
+				<article class="blog__post shadow">
+						<div class="row">
+							<div class="col-lg-5">
+								<img alt="" class="img-fluid" style="height: 100%" src="${heroImage}">
 							</div>
-						</article>
-					</div>
+							<div class="col-7 ">
+								<div class="row pt-2 blog__post__content">
+									<div class="col-3 col-lg-2">
+										<img alt="" class="img-fluid rounded-circle blog-image" src="${profileImage}">
+									</div>
+									<p class="col-4 col-lg-6"> by ${personalData}</p>
+									<div class="col-4 col-lg-3 blog__post__tags">
+										${tagList}
+									</div>
+								</div>
+								<h2>${title}</h2>
+								<p>${description}</p>
+							</div>
+						</div>
+					</article>
 			`
 
 			wrapper.innerHTML += post

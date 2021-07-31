@@ -108,9 +108,13 @@ input {
 }
 
 .blog__post {
-  margin-top: 40px;
+  margin-top: 90px;
   padding-right: 5%;
   text-align: justify;
+}
+
+.blog__post__content p {
+  margin-top: 3%;
 }
 
 .blog__post__content img {
@@ -123,7 +127,7 @@ input {
 }
 
 .blog__post h2 {
-  margin-top: 10px;
+  margin-top: 3%;
 }
 
 .blog-image {
@@ -133,7 +137,7 @@ input {
 .aside__header {
   text-align: center;
   margin-bottom: 40px;
-  margin-top: 40px;
+  margin-top: 90px;
   font-size: 2rem;
 }
 
