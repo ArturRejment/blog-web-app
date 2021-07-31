@@ -93,27 +93,39 @@ input {
 			left: 20px;
 
 			img {
-
 				border: 2px solid $prim-color;
 			}
 
-			h3, h2 {
+			h3 {
 				color: $prim-color;
+				padding-top: 3%;
+			}
+
+			h2 {
+				color: $prim-color;
+				padding-top: 5%;
 			}
 		}
 
 	}
 }
 
-.blog-post {
-	margin-top: 40px;
+.hero__post__small {
+
+	height: 35vh;
+	img {
+		height: 100%;
+		width: 100%;
+	}
 }
 
-@media (max-width: 992px) {
-	.hero {
-		height: fit-content;
+.hero__post__big {
+	height: 75vh;
+}
 
-	}
+
+.blog-post {
+	margin-top: 40px;
 }
 
 @media (min-width: 1200px) and (max-width: 1400px){
@@ -139,3 +151,22 @@ input {
 	}
 }
 
+@media (max-width: 992px) {
+	.hero {
+		height: fit-content;
+	}
+
+	.hero__post {
+		height: 60vh;
+	}
+}
+
+@media (max-width: 600px) {
+	.hero {
+		height: fit-content;
+	}
+
+	.hero__post {
+		height: 45vh;
+	}
+}
