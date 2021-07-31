@@ -49,8 +49,6 @@ input {
 
 // HERO
 
-
-
 .hero {
 	background-color: $sec-bg-color;
 	height: 100vh;
@@ -111,7 +109,6 @@ input {
 }
 
 .hero__post__small {
-
 	height: 35vh;
 	img {
 		height: 100%;
@@ -123,9 +120,67 @@ input {
 	height: 75vh;
 }
 
-
-.blog-post {
+.blog__post {
 	margin-top: 40px;
+	padding-right: 5%;
+	text-align: justify;
+
+	&__content {
+		img {
+			border: 2px solid $prim-color;
+		}
+	}
+
+	&__tags {
+		text-align: center;
+		font-weight: bold;
+	}
+
+	h2 {
+		margin-top: 10px;
+	}
+}
+
+.blog-image {
+	border: 5px solid $prim-color;
+}
+
+.aside__header {
+	text-align: center;
+	margin-bottom: 40px;
+	margin-top: 40px;
+	font-size: 2rem;
+}
+
+.top__author {
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	&__info {
+		padding-left: 10px;
+		text-align: left;
+
+		h5 {
+			margin-bottom: 7px;
+		}
+
+		p {
+			margin-bottom: 7px;
+		}
+
+		&__links {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			width: 50%;
+
+			a {
+				font-size: 1.3rem;
+			}
+		}
+	}
 }
 
 @media (min-width: 1200px) and (max-width: 1400px){

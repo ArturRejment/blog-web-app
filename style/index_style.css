@@ -107,8 +107,77 @@ input {
   height: 75vh;
 }
 
-.blog-post {
+.blog__post {
   margin-top: 40px;
+  padding-right: 5%;
+  text-align: justify;
+}
+
+.blog__post__content img {
+  border: 2px solid #66fcf1;
+}
+
+.blog__post__tags {
+  text-align: center;
+  font-weight: bold;
+}
+
+.blog__post h2 {
+  margin-top: 10px;
+}
+
+.blog-image {
+  border: 5px solid #66fcf1;
+}
+
+.aside__header {
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  font-size: 2rem;
+}
+
+.top__author {
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.top__author__info {
+  padding-left: 10px;
+  text-align: left;
+}
+
+.top__author__info h5 {
+  margin-bottom: 7px;
+}
+
+.top__author__info p {
+  margin-bottom: 7px;
+}
+
+.top__author__info__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+}
+
+.top__author__info__links a {
+  font-size: 1.3rem;
 }
 
 @media (min-width: 1200px) and (max-width: 1400px) {
