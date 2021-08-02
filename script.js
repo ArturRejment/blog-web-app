@@ -32,7 +32,6 @@ function fetchTopUsers() {
 			let bio = list[i]["bio"]
 			let userImage = list[i]["imageURL"]
 
-
 			let item = `
 				<article class="row top__author">
 					<div class="col-sm-4">
@@ -52,6 +51,20 @@ function fetchTopUsers() {
 			wrapper.innerHTML += item
 		}
 
+	})
+}
+
+function fetchTopPosts() {
+	let url = "http://127.0.0.1:7000/top_posts"
+
+	fetch(url).then((resp) => resp.json()).then(function (data) {
+		let list = data["posts"]
+
+		let wrapper = document.getElementById("top_posts")
+
+		for (let i in list) {
+
+		}
 	})
 }
 
@@ -104,7 +117,6 @@ function fetchBlogPosts() {
 						</div>
 					</article>
 			`
-
 			wrapper.innerHTML += post
 		}
 	})
